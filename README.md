@@ -1,36 +1,85 @@
 # Plaasjapie Dating App
 
-A revolutionary dating application designed specifically for South Africans, connecting both urban and rural communities.
+A dating app connecting urban and rural South Africans.
+
+## Description
+
+Plaasjapie is a mobile application aimed at connecting people from urban and rural areas in South Africa, helping bridge the gap between different communities and fostering relationships across diverse backgrounds.
 
 ## Features
 
-- **Offline Mode**: Continue using the app in areas with poor connectivity
-- **Cultural Integration**: Match based on shared cultural interests and traditions
-- **Multilingual Support**: Support for all 11 official South African languages
-- **Rural-Urban Connection**: Bridge the gap between city and countryside lifestyles
-- **Anti-Catfishing Measures**: Robust verification systems to ensure authentic connections
-- **Event Integration**: Discover cultural events and meeting opportunities nearby
+- User authentication (email/password)
+- User profile creation and management
+- Location-based matching
+- Interests and preferences matching
+- Real-time messaging
+- Event discovery
+- Multilingual support (English, Afrikaans)
+- Offline capability
 
-## Technology Stack
+## Tech Stack
 
-- **Frontend**: React Native with Expo
-- **Backend**: Node.js, Express, and Firebase
-- **Database**: MongoDB with Redis caching
-- **AI Integration**: On-device translation and matching algorithms
+- React Native / Expo
+- Firebase (Authentication, Firestore, Storage)
+- JavaScript
 
 ## Getting Started
 
+### Prerequisites
+
+- Node.js (v14+)
+- npm or yarn
+- Expo CLI
+
+### Installation
+
 1. Clone the repository
-2. Install dependencies: `npm install`
-3. Start the development server: `npm start`
+   ```
+   git clone https://github.com/Malkiworks/plaasjapie.git
+   cd plaasjapie
+   ```
 
-## Target Audience
+2. Install dependencies
+   ```
+   npm install
+   ```
 
-- **Urban Users**: Young professionals (18-35) seeking culturally authentic connections
-- **Rural Users**: Farmers, agricultural workers, and small-town residents (18-45) looking for meaningful relationships
+3. Start the development server
+   ```
+   npx expo start
+   ```
 
-## Monetization
+### Web Demo
 
-- Freemium model with premium subscription options
-- In-app purchases for virtual gifts and profile boosts
-- Localized advertising partnerships with South African brands 
+A simplified web version of the app is also available. To run it:
+
+```
+cd web-build
+serve
+```
+
+Visit `http://localhost:3000` in your browser.
+
+## Project Structure
+
+- `/app`: Main application code
+  - `/assets`: Images, icons, and other assets
+  - `/components`: Reusable UI components
+  - `/context`: React Context providers
+  - `/navigation`: Navigation configuration
+  - `/screens`: Application screens
+  - `/services`: API and service integrations
+  - `/translations`: Language files
+  - `/utils`: Utility functions
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+Project Link: [https://github.com/Malkiworks/plaasjapie](https://github.com/Malkiworks/plaasjapie) 
