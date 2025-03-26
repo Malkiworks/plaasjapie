@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "Plaasjapie",
+    "slug": "plaasjapie",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/icon.png",
+    "splash": {
+      "image": "./app/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#E63946"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.plaasjapie.app",
+      "googleServicesFile": "./GoogleService-Info.plist"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/adaptive-icon.png",
+        "backgroundColor": "#E63946"
+      },
+      "package": "com.plaasjapie.app",
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "RECORD_AUDIO",
+        "INTERNET"
+      ]
+    },
+    "web": {
+      "favicon": "./app/assets/favicon.png",
+      "bundler": "metro",
+      "output": "static",
+      "staticRendering": false
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Plaasjapie to use your location to find matches and events nearby."
+        }
+      ],
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth"
+    ],
+    "sdkVersion": "52.0.0"
+  }
+} 
